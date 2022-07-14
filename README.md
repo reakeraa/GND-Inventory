@@ -43,6 +43,19 @@ https://wiki.aa.com/bin/view/Global%20Network%20Delivery%20-%20IT/Network%20Oper
 # Network Operations Sparing Framework
 https://wiki.aa.com/bin/view/Global%20Network%20Delivery%20-%20IT/Network%20Operations%20-%20Information/Operations%20Sparing%20Framework/
 
+# Build DAtabase to capture inventory - WAN
+driven around site information - Alexander - Deverloper working wth Jerry - Not associated with this effort 
+
+# Roger
+Three areas of Gaps to close
+1) Cherwell asset DBMAA - accuracy concern - accuracy defined across the systems secrion below.
+*Asset Tags - Status - JHow - TDC definition of tags - Audit - Serial numbers versus Asset tagging today
+# Priority One
+D1 Inventory located in Cherwell Location with correct naming convetnions - Spare Break Fix etc...- See TDC - Spreadhseet Comapre
+# Inventory Avialble for Delivery Product
+Full Audit of TDC's = DFW/PHX/PHL/CLT/LHR ?  other criticla to ITFS break fix - Where Spares located
+
+
 # Network Operations
 https://wiki.aa.com/bin/view/Global%20Network%20Delivery%20-%20IT/Network%20Operations%20-%20Information/
 
