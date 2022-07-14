@@ -26,6 +26,9 @@ The purpose of this category is to identify requirements in line that could caus
 # Decision One Internal Wiki
 https://wiki.aa.com/bin/view/Global%20Network%20Delivery%20-%20IT/Network%20Operations%20-%20Information/Network%20Field%20Services/Decision%20One%20-%203rd%20Party%20WW%20Smart%20Hands/
 
+# Scrub inventory
+D1 locations and pull back - Cisco valid Inventory - H3C EOSL
+
 # Decision One Weekly Task List
 * Process Current and Improvements
 * Replacement switches go back to Buckingham Fort Worth unless otherwise discuss during the call with AA tech and D1 tech
@@ -55,6 +58,28 @@ D1 Inventory located in Cherwell Location with correct naming convetnions - Spar
 # Inventory Avialble for Delivery Product
 Full Audit of TDC's = DFW/PHX/PHL/CLT/LHR ?  other criticla to ITFS break fix - Where Spares located
 
+# Bill Orr Document - Cherwell Document - 
+Steps for Pulling reports -
+
+# Smartnet Warranty
+Purpose of this category is to update the Cherwell record with Contract and term 12 months not 36
+
+# Asset Information and Updates
+Update catalog or add new devices
+explore with TDC options and steps - devices FOUND - not located in Cherwell 0- how ensure get created in Cherwell
+*loss category - how explain
+
+# P42
+Update process for devices in 42 - Automation - Decomm and Install checklist - See Engnotifications for databases included and needed to be added
+*cherwell movement from a to b (P41) - why is this paper?  automate create database for history 
+
+# Mapping Workflows
+1) Part MACD
+2) Automation portal updates 
+3) Cherwell master install decommm 
+
+# Aruba
+Identify Aruba Spares locations - (7/15/2022) (justin) deliverable - year one purchase - spares - (124 original count)
 
 # Network Operations
 https://wiki.aa.com/bin/view/Global%20Network%20Delivery%20-%20IT/Network%20Operations%20-%20Information/
