@@ -1,5 +1,38 @@
-# GND-Inventory
-Networking Inventory
+# GND-Inventory  - Network Delivery and Operations
+Networking Inventory for switches, routers and associated peripherals
+
+#Roger
+Three areas of Gaps to close
+1) Cherwell asset DBMAA - accuracy concern - accuracy defined across the systems secrion below.
+*Asset Tags - Status - JHow - TDC definition of tags - Audit - Serial numbers versus Asset tagging today
+
+      # Priority One
+D1 Inventory located in Cherwell Location with correct naming convetnions - Spare Break Fix etc...- See TDC - Spreadhseet Comapre
+
+      # Inventory Avialble for Delivery Product
+Full Audit of TDC's = DFW/PHX/PHL/CLT/LHR ?  other criticla to ITFS break fix - Where Spares located
+
+      # Bill Orr Document - Cherwell Document - 
+Steps for Pulling reports -
+ 
+      # Asset Information and Updates
+Update catalog or add new devices
+explore with TDC options and steps - devices FOUND - not located in Cherwell 0- how ensure get created in Cherwell
+*loss category - how explain
+
+      # P42
+Update process for devices in 42 - Automation - Decomm and Install checklist - See Engnotifications for databases included and needed to be added
+*cherwell movement from a to b (P41) - why is this paper?  automate create database for history 
+
+      # Mapping Workflows
+1) Part MACD
+2) Automation portal updates 
+3) Cherwell master install decommm 
+
+    # Aruba
+Identify Aruba Spares locations - (7/15/2022) (justin) deliverable - year one purchase - spares - (124 original count)
+
+
 
 # Spare Network Switches
 The purpose of this is to identify Inventory locations for GND and how to use for 1)Break Fix 2) New Deployment 3) Project
@@ -49,37 +82,8 @@ https://wiki.aa.com/bin/view/Global%20Network%20Delivery%20-%20IT/Network%20Oper
 # Build DAtabase to capture inventory - WAN
 driven around site information - Alexander - Deverloper working wth Jerry - Not associated with this effort 
 
-# Roger
-Three areas of Gaps to close
-1) Cherwell asset DBMAA - accuracy concern - accuracy defined across the systems secrion below.
-*Asset Tags - Status - JHow - TDC definition of tags - Audit - Serial numbers versus Asset tagging today
-# Priority One
-D1 Inventory located in Cherwell Location with correct naming convetnions - Spare Break Fix etc...- See TDC - Spreadhseet Comapre
-# Inventory Avialble for Delivery Product
-Full Audit of TDC's = DFW/PHX/PHL/CLT/LHR ?  other criticla to ITFS break fix - Where Spares located
-
-# Bill Orr Document - Cherwell Document - 
-Steps for Pulling reports -
-
 # Smartnet Warranty
 Purpose of this category is to update the Cherwell record with Contract and term 12 months not 36
-
-# Asset Information and Updates
-Update catalog or add new devices
-explore with TDC options and steps - devices FOUND - not located in Cherwell 0- how ensure get created in Cherwell
-*loss category - how explain
-
-# P42
-Update process for devices in 42 - Automation - Decomm and Install checklist - See Engnotifications for databases included and needed to be added
-*cherwell movement from a to b (P41) - why is this paper?  automate create database for history 
-
-# Mapping Workflows
-1) Part MACD
-2) Automation portal updates 
-3) Cherwell master install decommm 
-
-# Aruba
-Identify Aruba Spares locations - (7/15/2022) (justin) deliverable - year one purchase - spares - (124 original count)
 
 # Network Operations
 https://wiki.aa.com/bin/view/Global%20Network%20Delivery%20-%20IT/Network%20Operations%20-%20Information/
