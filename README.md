@@ -2,19 +2,18 @@
 Networking Inventory for switches, routers and associated peripherals
 
 #Roger
-Three areas of Gaps to close
 1) Cherwell asset CMDB - accuracy concern - accuracy defined across the systems sectioon below.
-*Asset Tags - Status - Justin Dowling - TDC definition of tags - Serial numbers versus Asset tagging today
+*Serial numbers versus Asset tagging today
 
-# Cherwell Asset Status
-      Allocated – (operational spares)  This status is only used by TDC for Enterprise-wide projects, so you should not see this status used for Network Devices Break Fix
+      # Cherwell Asset Status - Status - Justin Dowling - TDC definition of tags 7-191-22
+Allocated – (operational spares)  This status is only used by TDC for Enterprise-wide projects, so you should not see this status used for Network Devices Break Fix
 Domiciled stocking locations managed by AA
 Non Domiciled stocking locations held and managed by Decision One
-o	Hold – (set aside for projects) This is true, though I would expand this to put your Operational Spares in this status and we just put “Operational Spares” in          the Location Specifics field so they can be sorted
-o	Installed - (deployed) Production Status
-o	Lost – This is a quarterly activity that should be reconciled with TDC’s and 3PL’s
-o	Salvaged – physically destoyed
-o	Stock - (Excess) available for others to consume outside network or inside network – highest priority use first. R. Perez approval.  Production Spare – no              defined use operationally or for a project and can be used to conserve cash versus purchasing – Do not use for reimbursable projects – Align with network               engineering before use is preferred.
+Hold – (set aside for projects) This is true, though I would expand this to put your Operational Spares in this status and we just put “Operational Spares” in          the Location Specifics field so they can be sorted
+Installed - (deployed) Production Status
+Lost – This is a quarterly activity that should be reconciled with TDC’s and 3PL’s
+Salvaged – physically destoyed
+Stock - (Excess) available for others to consume outside network or inside network – highest priority use first. R. Perez approval.  Production Spare – no              defined use operationally or for a project and can be used to conserve cash versus purchasing – Do not use for reimbursable projects – Align with network              engineering before use is preferred.
 
       # Priority One
 D1 Inventory located in Cherwell Location with correct naming convetnions - Spare Break Fix etc...- See TDC - Spreadhseet Comapre
@@ -89,9 +88,6 @@ D1 locations and pull back - Cisco valid Inventory - H3C EOSL
 * Network sites and LAN weekly reports
 * Review and Questions
 * Discuss any other topics for all. 
-
-# Network Operations Sparing Framework
-https://wiki.aa.com/bin/view/Global%20Network%20Delivery%20-%20IT/Network%20Operations%20-%20Information/Operations%20Sparing%20Framework/
 
 # Build DAtabase to capture inventory - WAN
 driven around site information - Alexander - Deverloper working wth Jerry - Not associated with this effort 
