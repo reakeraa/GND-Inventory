@@ -32,7 +32,11 @@ Update process for devices in 42 - Automation - Decomm and Install checklist - S
     # Aruba
 Identify Aruba Spares locations - (7/15/2022) (justin) deliverable - year one purchase - spares - (124 original count)
 
+THIS IS A TEST EXAMPLE
+TO SHOW HOW FIDD WOULD LIOOK 
 
+
+WHEN A CHANGE IS MADE
 
 # Spare Network Switches
 The purpose of this is to identify Inventory locations for GND and how to use for 1)Break Fix 2) New Deployment 3) Project
