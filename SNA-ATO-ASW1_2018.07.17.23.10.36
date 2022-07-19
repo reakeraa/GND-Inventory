@@ -1,0 +1,390 @@
+
+!
+! Last configuration change at 06:06:04 GMT Wed Jul 18 2018
+!
+version 15.2
+no service pad
+service tcp-keepalives-in
+service tcp-keepalives-out
+service timestamps debug datetime msec localtime show-timezone
+service timestamps log datetime msec localtime show-timezone
+service password-encryption
+service pt-vty-logging
+service counters max age 10
+!
+hostname SNA-ATO-ASW1
+!
+boot-start-marker
+boot-end-marker
+!
+logging rate-limit console 10 except errors
+logging console critical
+logging monitor critical
+enable secret 5 $1$puz/$hHYgNOMZ/XkEaiKmec0MD.
+!
+username admin secret 5 $1$74FP$XKfOYrzPwfr7KnA5S0PIA/
+aaa new-model
+!
+!
+aaa group server tacacs+ tacacs-servers
+ server-private 10.255.16.25 key 7 011204125548425A73
+ server-private 10.255.21.10 key 7 104F0B0F0B54565E5E
+!
+aaa authentication login default group tacacs-servers local
+aaa authentication enable default group tacacs-servers enable
+aaa authorization exec default group tacacs-servers if-authenticated 
+aaa accounting commands 0 default stop-only group tacacs-servers
+aaa accounting commands 1 default stop-only group tacacs-servers
+aaa accounting commands 15 default stop-only group tacacs-servers
+aaa accounting connection default start-stop group tacacs-servers
+!
+!
+!
+!
+!
+!
+aaa session-id common
+clock timezone GMT 0 0
+switch 1 provision ws-c2960x-24ts-l
+no ip source-route
+ip routing
+ip dhcp bootp ignore
+!
+!
+ip domain-name corpaa.aa.com
+ip name-server 10.156.255.10
+login block-for 300 attempts 5 within 10
+ntp max-associations 1
+vtp mode off
+!
+!
+!
+!
+!
+udld enable
+
+!
+!
+!
+archive
+ log config
+  logging enable
+  logging size 1000
+  notify syslog contenttype plaintext
+  hidekeys
+!
+spanning-tree mode rapid-pvst
+spanning-tree loopguard default
+spanning-tree portfast default
+spanning-tree portfast bpduguard default
+spanning-tree extend system-id
+spanning-tree pathcost method long
+spanning-tree vlan 1-4094 priority 61440
+errdisable recovery cause udld
+errdisable recovery cause bpduguard
+errdisable recovery cause channel-misconfig
+errdisable recovery cause link-flap
+errdisable recovery cause psecure-violation
+errdisable recovery cause storm-control
+!
+!
+!
+!
+vlan internal allocation policy ascending
+!
+ip tcp path-mtu-discovery
+no ip rcmd domain-lookup
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0
+ no ip address
+ no ip route-cache
+ shutdown
+!
+interface GigabitEthernet1/0/1
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/2
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/3
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/4
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/5
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/6
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/7
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/8
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/9
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/10
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/11
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/12
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/13
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/14
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/15
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/16
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/17
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/18
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/19
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/20
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/21
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/22
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/23
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/24
+ description USER_VLAN_1
+ switchport mode access
+ no snmp trap link-status
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/25
+ description AAAPUSCA194-R02 -> Gi1/0/25
+ switchport trunk allowed vlan 1
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/26
+!
+interface GigabitEthernet1/0/27
+!
+interface GigabitEthernet1/0/28
+!
+interface Vlan1
+ description SNA-ATO-ASW1 User VLAN
+ ip address 10.105.193.6 255.255.255.0
+ no ip redirects
+ no ip proxy-arp
+!
+no ip http server
+no ip http secure-server
+!
+ip ftp source-interface Vlan1
+ip tftp source-interface Vlan1
+ip route 0.0.0.0 0.0.0.0 10.105.193.1
+ip ssh time-out 60
+ip ssh source-interface Vlan1
+ip ssh version 2
+ip scp server enable
+ip tacacs source-interface Vlan1
+!
+access-list 88 remark Golden Template Version
+access-list 88 remark Cisco.V-031.03-20-17
+access-list 93 remark NTP
+access-list 93 permit 10.242.0.146
+access-list 93 deny   any log
+access-list 94 remark VTY
+access-list 94 permit 10.0.0.0 0.255.255.255
+access-list 94 permit 172.16.0.0 0.15.255.255
+access-list 94 permit 192.168.0.0 0.0.255.255
+!
+snmp-server group NetworkGroup v3 priv read AANetworkView write AANetworkView 
+snmp-server group ReadOnlyGroup v3 priv read AANetworkView 
+snmp-server view AANetworkView iso included
+snmp-server trap-source Vlan1
+snmp-server location SNA-ATO
+snmp-server contact ENSOPS 817-726-3741 ensops@aa.com
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps config
+snmp-server enable traps cpu threshold
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps port-security
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps errdisable
+snmp-server host 10.255.26.37 version 3 priv AANetworkUser 
+snmp-server host 10.255.26.92 version 3 priv AANetworkUser 
+snmp-server context NetworkGroup
+snmp ifmib ifindex persist
+tacacs-server directed-request
+!
+!
+vstack
+banner exec 
+  WARNING! You are connected to a private system. 
+
+  If you are not an authorized user, disconnect immediately.
+  
+
+banner motd 
+
+                    AAA                                   AAA               
+                   A:::A                                 A:::A              
+                  A:::::A                               A:::::A             
+                 A:::::::A                             A:::::::A            
+                A:::::::::A                           A:::::::::A           
+               A:::::A:::::A                         A:::::A:::::A          
+              A:::::A A:::::A                       A:::::A A:::::A         
+             A:::::A   A:::::A                     A:::::A   A:::::A        
+            A:::::A     A:::::A                   A:::::A     A:::::A       
+           A:::::AAAAAAAAA:::::A                 A:::::AAAAAAAAA:::::A      
+          A:::::::::::::::::::::A               A:::::::::::::::::::::A     
+         A:::::AAAAAAAAAAAAA:::::A             A:::::AAAAAAAAAAAAA:::::A    
+        A:::::A             A:::::A           A:::::A             A:::::A   
+       A:::::A               A:::::A         A:::::A               A:::::A  
+      A:::::A                 A:::::A       A:::::A                 A:::::A 
+     AAAAAAA                   AAAAAAA     AAAAAAA                   AAAAAAA
+                                                                            
+
+*****************************************************************************************
+
+*                                 AUTHORIZED USERS ONLY                                 *
+
+* This network device is owned by American Airlines and managed by its service          *
+
+* providers. Access to and use of this device is restricted solely to the authorized    *
+
+* business purposes of American Airlines. Any unauthorized access or use, including     *
+
+* unauthorized communications using or data stored on this device, may be subject       *
+
+* to monitoring, interception and review, subject to applicable local laws. Individuals *
+
+* attempting unauthorized access and/or use may be in violation of company policies,    *
+
+* and subject to disciplinary action up to and including discharge, federal, state      *
+
+* and/or local laws and liable for damages.                                             *
+
+*****************************************************************************************
+
+!
+line con 0
+ exec-timeout 5 0
+ password 7 10441C1E2633464501
+ logging synchronous
+ exec prompt timestamp
+line vty 0 4
+ access-class 94 in vrf-also
+ exec-timeout 5 0
+ password 7 04511E012C05180004
+ transport input ssh
+line vty 5 15
+ access-class 94 in vrf-also
+ exec-timeout 5 0
+ password 7 000E0601277F5F4802
+ transport input ssh
+!
+ntp source Vlan1
+ntp access-group peer 93
+ntp access-group serve 93
+ntp access-group serve-only 93
+ntp access-group query-only 93
+ntp server 10.242.0.146 source Vlan1
+end
