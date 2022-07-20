@@ -12,7 +12,7 @@ service password-encryption
 service pt-vty-logging
 service counters max age 10
 !
-hostname SNA-ATO-ASW1
+hostname SNA-AT0-ASW1
 !
 boot-start-marker
 boot-end-marker
@@ -22,7 +22,7 @@ logging console critical
 logging monitor critical
 enable secret 5 $1$puz/$hHYgNOMZ/XkEaiKmec0MD.
 !
-username admin secret 5 $1$74FP$XKfOYrzPwfr7KnA5S0PIA/
+username admin secret 5 $1$74FP$XKfOYrzPwfr7KnA5S0PIA/  interesting - what happens if I had this to hash interpreter?
 aaa new-model
 !
 !
