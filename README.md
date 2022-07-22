@@ -6,14 +6,14 @@ Networking Inventory for switches, routers and associated peripherals
 *Serial numbers versus Asset tagging today
 
       # Cherwell Asset Status - Status - Justin Dowling - TDC definition of tags 7-191-22
-Allocated – (operational spares)  This status is only used by TDC for Enterprise-wide projects, so you should not see this status used for Network Devices Break Fix
-Domiciled stocking locations managed by AA
-Non Domiciled stocking locations held and managed by Decision One
-Hold – (set aside for projects) This is true, though I would expand this to put your Operational Spares in this status and we just put “Operational Spares” in          the Location Specifics field so they can be sorted
-Installed - (deployed) Production Status
-Lost – This is a quarterly activity that should be reconciled with TDC’s and 3PL’s
-Salvaged – physically destoyed
-Stock - (Excess) available for others to consume outside network or inside network – highest priority use first. R. Perez approval.  Production Spare – no              defined use operationally or for a project and can be used to conserve cash versus purchasing – Do not use for reimbursable projects – Align with network              engineering before use is preferred.
+# Allocated – (operational spares)  This status is only used by TDC for Enterprise-wide projects, so you should not see this status used for Network Devices Break Fix
+# Domiciled stocking locations managed by AA
+# Non Domiciled stocking locations held and managed by Decision One
+# Hold – (set aside for projects) This is true, though I would expand this to put your Operational Spares in this status and we just put “Operational Spares” in          the Location Specifics field so they can be sorted
+# Installed - (deployed) Production Status
+# Lost – This is a quarterly activity that should be reconciled with TDC’s and 3PL’s
+# Salvaged – physically destoyed
+# Stock - (Excess) available for others to consume outside network or inside network – highest priority use first. R. Perez approval.  Production Spare – no              defined use operationally or for a project and can be used to conserve cash versus purchasing – Do not use for reimbursable projects – Align with network              engineering before use is preferred.
 
       # Priority One
 D1 Inventory located in Cherwell Location with correct naming convetnions - Spare Break Fix etc...- See TDC - Spreadhseet Comapre
