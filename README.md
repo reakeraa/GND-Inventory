@@ -104,5 +104,12 @@ https://wiki.aa.com/bin/view/Global%20Network%20Delivery%20-%20IT/Network%20Oper
 * Cherwell
 * Spectrum
 * Tanium
+* App Response (ARX)
+* InfoBlox
 * Vendor Inventory (D1)
 * Vendor Inventory (WWT)
+
+# Licensing
+ATX - Transaction Expert License
+PAcket Analyser PLuse
+# How do we account and track licenses, - move allocate, renewal
